@@ -15,5 +15,7 @@ for (let customer of customers) {
 const h2El = document.createElement('h2')
 console.log(h2El)
 
-
+const h2Text = document.createTextNode(firstName + ' ' + lastName)
+h2El.appendChild(h2Text)
+customersDiv.appendChild(h2El)
 }
